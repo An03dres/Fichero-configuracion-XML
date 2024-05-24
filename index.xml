@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <database>
+        <host>localhost</host>
+        <port>5432</port>
+        <dbname>mi_base_de_datos</dbname>
+        <user>usuario</user>
+        <password>contraseña</password>
+    </database>
+
+    <webserver>
+        <port>8080</port>
+        <ssl>
+            <enabled>true</enabled>
+            <privateKeyPath>/ruta/a/clave_privada.key</privateKeyPath>
+            <certificatePath>/ruta/a/certificado.crt</certificatePath>
+        </ssl>
+        <maxConnections>100</maxConnections>
+        <timeout>30</timeout> 
+    </webserver>
+
+    <logging>
+        <level>info</level>
+        <filePath>/ruta/a/archivo_de_log.log</filePath>
+    </logging>
+</configuration>
